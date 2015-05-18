@@ -20,8 +20,17 @@ public class LinkedListOfIntegers {
   
   public int pop(){
     
-      int item = firstNode.item;
+    int item = firstNode.item;
     firstNode = firstNode.next;
     return item;
   }
+
+  public void reverseList(){
+    
+    // need to reverse direction of references
+    // Node1.next = Nodetmp
+    // Node lastnode = firstNode
+    
+  }
+  
 }

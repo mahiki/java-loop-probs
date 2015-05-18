@@ -1,7 +1,11 @@
 public class StackOfIntegers
 
-StackOfIntegers()                   create an empty stack
+StackOfIntegers()                   constructor create an empty stack
 void push(int item)                 insert a new int onto stack
 int pop()                           remove and return top item
 boolean isEmpty()                   is the stack empty?
-int size()                          number of items pon the stack
+int size()                          number of items pon the stack, count of Nodes
+
+
+keys
+Node{item, Node next} is a private inner class
