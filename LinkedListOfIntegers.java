@@ -12,6 +12,7 @@ public class LinkedListOfIntegers {
   }
   
   public void push(int item){
+  
     Node oldFirstNode = firstNode;
     firstNode = new Node();
     firstNode.item = item;
@@ -25,12 +26,25 @@ public class LinkedListOfIntegers {
     return item;
   }
 
+  public int size(){
+  
+    int nodeCount = 0;
+    Node nodeCheck = firstNode;
+    while(nodeCheck != null){
+      nodeCount++;
+      nodeCheck = nodeCheck.next;
+    }
+    return nodeCount;
+    
+  }
+  
   public void reverseList(){
     
     // need to reverse direction of references
     // Node1.next = Nodetmp
     // Node lastnode = firstNode
-    
+   
+    //while()
   }
   
 }

@@ -1,11 +1,15 @@
-public class StackOfIntegers
+public class LinkedListOfIntegers
 
-StackOfIntegers()                   constructor create an empty stack
-void push(int item)                 insert a new int onto stack
-int pop()                           remove and return top item
-boolean isEmpty()                   is the stack empty?
-int size()                          number of items pon the stack, count of Nodes
+             LinkedListOfIntegers()   constructor create an empty stack
+        void push(int item)           insert a new int onto stack
+         int pop()                    remove and return top item
+     boolean isEmpty()                is the stack empty?
+         int size()                   number of items pon the stack, count of Nodes
 
 
 keys
 Node{item, Node next} is a private inner class
+
+notes
+this is a stack implementation, which should be in the name i guess.
+could also be a queue
