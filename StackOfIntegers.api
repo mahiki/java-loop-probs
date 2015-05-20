@@ -13,3 +13,4 @@ Node{item, Node next} is a private inner class
 notes
 this is a stack implementation, which should be in the name i guess.
 could also be a queue
+make this for generic typs now

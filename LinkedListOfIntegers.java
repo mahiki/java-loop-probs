@@ -40,11 +40,18 @@ public class LinkedListOfIntegers {
   
   public void reverseList(){
     
-    // need to reverse direction of references
-    // Node1.next = Nodetmp
-    // Node lastnode = firstNode
-   
-    //while()
+    Node oldFirstNode = firstNode;
+    firstNode = oldFirstNode.next;
+    Node nextNode = firstNode.next;
+    oldFirstNode.next = null;
+    firstNode.next = oldFirstNode;
+      // now the first two Node pointers are reversed
+    while(nextNode != null){
+      oldFirstNode = firstNode;
+      firstNode = nextNode;
+      nextNode = nextNode.next;
+      firstNode.next = oldFirstNode;
+    }
+      // when nextNode is null the firstNode will be in right spot
   }
-  
 }

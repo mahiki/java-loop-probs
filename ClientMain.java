@@ -4,40 +4,40 @@ public class ClientMain{
     
     LinkedListOfIntegers list = new LinkedListOfIntegers();
     
-    int[] array = {1,2,3,4,5};
-    int numbero = 1;
-    
     System.out.println("Size of list is: " + list.size());
 
-    for(int i = 0; i < 5; i++){
-      list.push(array[i]);
+    for(int i = 1; i < 100051; i++){
+      list.push(i);
     }
     
     System.out.println("Size of list is: " + list.size());
 
-    int[] arrayB = {99,1092,8888888,718278109};
-
-    for(int i = 0; i < 4; i++){
-      list.push(arrayB[i]);
-    }
-
-    System.out.println("Size of list is: " + list.size());
-
     while(!list.isEmpty()) System.out.println(list.pop());
-
+    
     System.out.println("Size of list is: " + list.size());
 
-    for(int i = 0; i < 100; i++){
-      numbero = (int)Math.sqrt(i*5300)*2111;
-      list.push(numbero);
+    for(int i = 1; i < 100051; i++){
+      list.push(i);
     }
-
     System.out.println("Size of list is: " + list.size());
 
-    while(!list.isEmpty()) System.out.println(list.pop());
+    System.out.println("Reversing list now");
 
+    list.reverseList();
+
+    System.out.println("Size of list is: " + list.size());
+    
+    int listSize = list.size();
+    for(int i = 0; i < listSize - 1; i++){
+      System.out.println(list.pop());
+    }
+    
+    System.out.println("Size of list is: " + list.size());
+    while(!list.isEmpty()) System.out.println(list.pop());
     System.out.println("Size of list is: " + list.size());
   
+    System.out.println("Good Job!\n");
+    
   }
   
 }
