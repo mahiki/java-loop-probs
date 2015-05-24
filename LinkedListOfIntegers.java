@@ -30,22 +30,35 @@ public class LinkedListOfIntegers {
   
     int nodeCount = 0;
     Node nodeCheck = firstNode;
+
     while(nodeCheck != null){
       nodeCount++;
       nodeCheck = nodeCheck.next;
     }
+
     return nodeCount;
-    
   }
   
+  public int sizeRecursive(){
+    
+    return this.sizeR(firstNode);
+  }
+  
+  private int sizeR(Node node){
+    if (node == null) return 0;
+    else return 1 + this.sizeR(node.next);
+  }
+
   public void reverseList(){
     
     Node oldFirstNode = firstNode;
-    firstNode = oldFirstNode.next;
+    firstNode = firstNode.next;
     Node nextNode = firstNode.next;
+
     oldFirstNode.next = null;
     firstNode.next = oldFirstNode;
       // now the first two Node pointers are reversed
+
     while(nextNode != null){
       oldFirstNode = firstNode;
       firstNode = nextNode;
