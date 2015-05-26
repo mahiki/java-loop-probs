@@ -1,9 +1,14 @@
-public class LinkedListOfIntegers {
+/**
+ * Generic version of our Stack Linked List
+ * @param <T> the type of object in the list
+ */
+
+public class StackLinkedList<T> {
   
   private Node firstNode = null;
   
   private class Node {
-    int item;
+    T item;
     Node next;
   }
   
@@ -11,7 +16,7 @@ public class LinkedListOfIntegers {
     return firstNode == null;
   }
   
-  public void push(int item){
+  public void push(T item){
   
     Node oldFirstNode = firstNode;
     firstNode = new Node();
@@ -19,9 +24,9 @@ public class LinkedListOfIntegers {
     firstNode.next = oldFirstNode;
   }
   
-  public int pop(){
+  public T pop(){
     
-    int item = firstNode.item;
+    T item = firstNode.item;
     firstNode = firstNode.next;
     return item;
   }
@@ -38,15 +43,6 @@ public class LinkedListOfIntegers {
 
     return nodeCount;
   }
-  
-  public int sizeRecursive(){
-    return this.sizeR(firstNode);
-  }
-  
-  private int sizeR(Node node){
-    if (node == null) return 0;
-    else return 1 + this.sizeR(node.next);
-  }
 
   public void reverseList(){
     
@@ -56,7 +52,6 @@ public class LinkedListOfIntegers {
 
     oldFirstNode.next = null;
     firstNode.next = oldFirstNode;
-      // now the first two Node pointers are reversed
 
     while(nextNode != null){
       oldFirstNode = firstNode;
@@ -64,6 +59,5 @@ public class LinkedListOfIntegers {
       nextNode = nextNode.next;
       firstNode.next = oldFirstNode;
     }
-      // when nextNode is null the firstNode will be in right spot
   }
 }

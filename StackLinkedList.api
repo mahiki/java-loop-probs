@@ -1,0 +1,17 @@
+public class StackLinkedList<T>
+
+             LinkedListOfIntegers<T>()  constructor create an empty stack
+        void push(T item)               insert a new int onto stack
+         int pop()                      remove and return top item
+     boolean isEmpty()                  is the stack empty?
+           T size()                     number of items pon the stack, count of Nodes
+
+
+keys
+Node{item, Node next} is a private inner class
+Each instance of the list is one type
+
+notes
+this is a stack implementation, which should be in the name i guess.
+could also be a queue
+make this for generic typs now

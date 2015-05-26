@@ -7,7 +7,9 @@ a series of problems like in an SDE loop (not too difficult, just the core stuff
 
 #### contents
   these are also in issues
+  examples from the Java 8 distribution have `-java8` in the filename
 <br>
+
 ##### phase 1 - two easy problems
 - [ ] reverse linked list #1
 - [ ] bubble sort
