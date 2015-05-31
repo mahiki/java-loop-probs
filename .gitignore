@@ -20,5 +20,7 @@
 # misc
 *.log
 test.txt
+tmp.txt
 *.tmp
 *.tst
+

@@ -1,0 +1,20 @@
+iterator   array N=5
+j  i       A[  0  1  2  3  4  ]        notes
+               7  9  0  2  2           initialized random ints
+0  0           .  .  .  .  .
+0  1           .  0  9  .  .
+0  2           .  .  2  9  .
+0  3           .  .  .  2  9           i goes to N-2
+1  0           0  7  .  .  .
+1  1           .  2  7  .  .
+1  2           .  .  2  7  .
+1  3           .  .  .  .  .
+2  0           .  .  .  .  .
+2  1           .  .  .  .  .
+2  2           .  .  .  .  .
+2  3           .  .  .  .  .
+3  0           .  .  .  .  .
+...
+4  3           .  .  .  .  .
+
+----           0  2  2  7  9           method argument array is now sorted

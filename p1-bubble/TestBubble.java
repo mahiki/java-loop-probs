@@ -2,12 +2,12 @@ public class TestBubble{
 
    public static void main(String[] args){
 
-      int N = 24;
+      int N = 2000;
       int[] testArray = new int[N];
       int[] sortArray = new int[N];
       
       for(int i = 0; i < N; i++){
-         testArray[i] = (int) (Math.random()*50);
+         testArray[i] = (int) (Math.random()*5*N);
          sortArray[i] = testArray[i];
       }
  
