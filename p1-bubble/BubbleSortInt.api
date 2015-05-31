@@ -1,0 +1,6 @@
+public class BubbleSortInt
+
+        void sortArray(int[] A)     sort array A[] in place
+
+notes
+this will receive an integer array and sort in place, destroys old array.
