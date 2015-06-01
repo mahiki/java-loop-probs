@@ -12,4 +12,7 @@ I'm gonna pass on the recursive reverseLinkedList for now.
 <br><br>
 
 ###### bubble sort
-nothing yet
+int[] version is easy
+generic type needs Comparable implementation
+once you pass the inner loop once without swapping, no need to keep iterating
+bubble sort is easy man
