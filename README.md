@@ -14,3 +14,12 @@ examples from the Java 8 distribution have `-java8` in the filename
 - [x] bubble sort
 
 ##### phase 2 - sorting
+
+- [ ] insertion sort
+
+
+##### phase 3 - objects
+- [ ] deduplicate array of objects [issue #9](#9)
+
+
+

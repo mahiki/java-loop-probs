@@ -6,7 +6,6 @@ public class BubbleSortInt {
       
       int N = array.length;
       int tmp;
-      
       for(int j = 0; j < N; j++){
 
          for(int i = 0; i < N-1; i++){
