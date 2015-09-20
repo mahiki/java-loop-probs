@@ -19,4 +19,4 @@ examples from the Java 8 distribution have `-java8` in the filename
 
 
 ##### phase 3 - objects
-- [ ] deduplicate array of objects (issue #9)
+- [ ] deduplicate array of objects [issue #9](https://github.com/mahiki/java-loop-probs/issues/9)
